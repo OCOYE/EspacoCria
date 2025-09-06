@@ -13,6 +13,10 @@ if (name && name.toLowerCase() === "gamer") {
     window.location.href = "https://archlinux.org/";
 } else if (name && name.toLowerCase() === "a_and_b") {
     window.location.href = "https://www.youtube.com/watch?v=5BaH5bahjMA";
+} else if (name && name.toLowerCase() === "manoel_or_manel") { /* EU NÃO SOU UM DESTRUIDOR DE RAM!!!!!!! */
+    window.location.href = "https://github.com/OCOYE";
+} else if (name && name.toLowerCase() === "debug") {
+    window.location.href = "./eggs/batata.html";
 } else {
-    document.writeln(`${name}`) /* isso não é */
+    document.writeln(`${name}`) /* isso não é um easter egg!!*/
 }
