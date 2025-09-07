@@ -234,27 +234,3 @@ li { margin-bottom: 0.75rem; position: relative; padding-left: 0.5rem; }
 /* Estilo moderno para bullets e números */
 ul li::before { content: "•"; position: absolute; left: -1rem; color: #8f5eff; font-weight: bold; }
 ol li::before { content: counter(list-counter) "."; position: absolute; left: -1.5rem; color: #5d3bff; font-weight: 600; counter-increment: list-counter; }
-
-/* Imagens */
-
-/* Container para centralizar e controlar a imagem */
-.gif-container {
-    text-align: center;
-    margin: 2rem auto;
-}
-
-/* Estilo responsivo para o GIF */
-.gif-container img {
-    max-width: 100%;  /* Garante que a imagem nunca ultrapasse a largura do container */
-    height: auto;     /* Mantém a proporção */
-    display: inline-block;
-    border-radius: 12px; /* opcional: deixa com cantos arredondados */
-    box-shadow: 0 10px 20px rgba(143, 94, 255, 0.1); /* opcional: efeito elegante */
-}
-
-/* Ajustes específicos para telas menores */
-@media (max-width: 480px) {
-    .gif-container img {
-        width: 90%;   /* Ocupa quase toda a tela em smartphones */
-    }
-}
