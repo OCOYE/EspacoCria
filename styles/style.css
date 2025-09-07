@@ -1,0 +1,293 @@
+/* ======== Reset Moderno ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======== Estilo Global ======== */
+body {
+    background-color: white;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    color: #1f1f1f;
+    line-height: 1.7;
+    padding: 0 1rem;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* ======== Títulos ======== */
+h1 {
+    background: linear-gradient(90deg, #8f5eff, #5d3bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: 900;
+    font-size: clamp(3rem, 7vw, 6rem);
+    margin: 2.5rem 0 1.5rem;
+    letter-spacing: -0.03em;
+    animation: floating 3s ease-in-out infinite;
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #5d3bff;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6b4cce;
+    margin-bottom: 1.5rem;
+}
+
+/* ======== Parágrafos ======== */
+p {
+    text-align: center;
+    max-width: 720px;
+    margin: 0.5rem auto 1.75rem;
+    font-size: 1.1rem;
+    color: #3a3a3a;
+    line-height: 1.8;
+}
+
+/* ======== Seções com Glassmorphism ======== */
+section {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(93, 59, 255, 0.08);
+    padding: 2.5rem;
+    margin: 2.5rem auto;
+    max-width: 950px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border: 1px solid rgba(143, 94, 255, 0.1);
+}
+
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(93, 59, 255, 0.12);
+}
+
+/* ======== Botões Elegantes ======== */
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #8f5eff, #5d3bff);
+    color: white;
+    font-weight: 600;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(143, 94, 255, 0.2);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(143, 94, 255, 0.3);
+    background: linear-gradient(90deg, #9d71ff, #6b4cff);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #5d3bff;
+    border: 2px solid #5d3bff;
+}
+
+.btn-secondary:hover {
+    background: rgba(93, 59, 255, 0.05);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+/* ======== Cards ======== */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 280px;
+    box-shadow: 0 10px 25px rgba(143, 94, 255, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(143, 94, 255, 0.15);
+}
+
+.card h4 {
+    color: #5d3bff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #8f5eff;
+}
+
+/* ======== Animações ======== */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+/* ======== Links Modernos ======== */
+a {
+    color: #5d3bff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: #8f5eff;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* ======== Footer ======== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* ======== Responsividade ======== */
+@media (max-width: 768px) {
+    section {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+    
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* ======== Listas ======== */
+ul, ol {
+    max-width: 720px;
+    margin: 1.5rem auto 2rem;
+    padding-left: 1.5rem;
+    color: #3a3a3a;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: disc; /* Bolinhas */
+}
+
+ol {
+    list-style-type: decimal; /* Números */
+    counter-reset: list-counter;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+/* Estilo moderno para bullets e números */
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: -1rem;
+    color: #8f5eff; /* cor do gradiente principal */
+    font-weight: bold;
+}
+
+ol li {
+    counter-increment: list-counter;
+}
+
+ol li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    left: -1.5rem;
+    color: #5d3bff; /* cor complementar do gradiente */
+    font-weight: 600;
+}

@@ -17,6 +17,8 @@ if (name && name.toLowerCase() === "gamer") {
     window.location.href = "https://github.com/OCOYE";
 } else if (name && name.toLowerCase() === "debug") {
     window.location.href = "./eggs/batata.html";
+} else if (name && name.toLowerCase() === "updates") {
+    window.location.href = "./updates.html";
 } else {
     document.writeln(`${name}`) /* isso não é um easter egg!!*/
 }
