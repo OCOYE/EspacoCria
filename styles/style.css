@@ -165,28 +165,16 @@ section:hover {
 
 /* ======== Animações ======== */
 @keyframes floating {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 @keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.fade-in {
-    animation: fadeInDown 0.8s ease-out;
-}
+.fade-in { animation: fadeInDown 0.8s ease-out; }
 
 /* ======== Links Modernos ======== */
 a {
@@ -228,24 +216,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ======== Responsividade ======== */
-@media (max-width: 768px) {
-    section {
-        padding: 1.5rem;
-        margin: 1.5rem auto;
-    }
-    
-    .btn-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 100%;
-        max-width: 280px;
-    }
-}
-
 /* ======== Listas ======== */
 ul, ol {
     max-width: 720px;
@@ -256,38 +226,11 @@ ul, ol {
     line-height: 1.8;
 }
 
-ul {
-    list-style-type: disc; /* Bolinhas */
-}
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; counter-reset: list-counter; }
 
-ol {
-    list-style-type: decimal; /* Números */
-    counter-reset: list-counter;
-}
-
-li {
-    margin-bottom: 0.75rem;
-    position: relative;
-    padding-left: 0.5rem;
-}
+li { margin-bottom: 0.75rem; position: relative; padding-left: 0.5rem; }
 
 /* Estilo moderno para bullets e números */
-ul li::before {
-    content: "•";
-    position: absolute;
-    left: -1rem;
-    color: #8f5eff; /* cor do gradiente principal */
-    font-weight: bold;
-}
-
-ol li {
-    counter-increment: list-counter;
-}
-
-ol li::before {
-    content: counter(list-counter) ".";
-    position: absolute;
-    left: -1.5rem;
-    color: #5d3bff; /* cor complementar do gradiente */
-    font-weight: 600;
-}
+ul li::before { content: "•"; position: absolute; left: -1rem; color: #8f5eff; font-weight: bold; }
+ol li::before { content: counter(list-counter) "."; position: absolute; left: -1.5rem; color: #5d3bff; font-weight: 600; counter-increment: list-counter; }

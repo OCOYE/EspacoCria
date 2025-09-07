@@ -7,12 +7,6 @@ if (name && name.toLowerCase() === "gamer") {
     window.location.href = "https://www.youtube.com/watch?v=Eqypnw6gQNg";
 } else if (name && name.toLowerCase() === "173") {
     window.location.href = "https://www.youtube.com/watch?v=CGYuUc9pPtQ";
-} else if (name && name.toLowerCase() === "linux") {
-    window.location.href = "kernel.org";
-} else if (name && name.toLowerCase() === "i_use_arch_btw") {
-    window.location.href = "https://archlinux.org/";
-} else if (name && name.toLowerCase() === "a_and_b") {
-    window.location.href = "https://www.youtube.com/watch?v=5BaH5bahjMA";
 } else if (name && name.toLowerCase() === "manoel_or_manel") { /* EU NÃO SOU UM DESTRUIDOR DE RAM!!!!!!! */
     window.location.href = "https://github.com/OCOYE";
 } else if (name && name.toLowerCase() === "debug") {
@@ -20,5 +14,5 @@ if (name && name.toLowerCase() === "gamer") {
 } else if (name && name.toLowerCase() === "updates") {
     window.location.href = "./updates.html";
 } else {
-    document.writeln(`${name}`) /* isso não é um easter egg!!*/
+    document.writeln(`${name}!`) /* isso não é um easter egg!!*/
 }
